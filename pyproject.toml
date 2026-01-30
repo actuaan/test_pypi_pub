@@ -1,0 +1,30 @@
+[build-system]
+requires = [
+  "scikit-build-core>=0.10",
+  "setuptools>=61.0",
+  "wheel",
+  "cython>=3.0",
+  "numpy"
+  # QUITAR "pandas" de aquí - no es necesario para compilar
+]
+build-backend = "scikit_build_core.build"
+
+[tool.scikit-build]
+cmake.minimum-version = "3.20"
+wheel.packages = ["src/test_pypi_pru"]
+cmake.build-type = "Release"
+
+[project]
+name = "test_pypi_pru"
+version = "0.1.0"
+description = "Proyecto compilado con Cython (Binarios solamente). Proyecto empaquetado con scikit-build-core y setuptools"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["pandas", "numpy"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["latuca*"]
+
+[tool.setuptools]
+include-package-data = false
