@@ -1,3 +1,21 @@
+[project]
+name = "test_pypi_pru"
+version = "0.0.1"
+authors = [
+  { name="Example Author", email="author@example.com" },
+]
+description = "Proyecto compilado con Cython (Binarios solamente). Proyecto empaquetado con scikit-build-core y setuptools"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICENSE*"]
+
+dependencies = ["pandas", "numpy"]
+
 [build-system]
 requires = [
   "scikit-build-core>=0.10",
@@ -14,17 +32,15 @@ cmake.minimum-version = "3.20"
 wheel.packages = ["src/test_pypi_pru"]
 cmake.build-type = "Release"
 
-[project]
-name = "test_pypi_pru"
-version = "0.1.0"
-description = "Proyecto compilado con Cython (Binarios solamente). Proyecto empaquetado con scikit-build-core y setuptools"
-readme = "README.md"
-requires-python = ">=3.8"
-dependencies = ["pandas", "numpy"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
-include = ["latuca*"]
+include = ["test_pypi_pru*"] # include = ["latuca*"]
 
 [tool.setuptools]
 include-package-data = false
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "v$version"
+update_changelog_on_bump = true
