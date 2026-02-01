@@ -1,3 +1,63 @@
+## v0.2.2 (2026-02-01)
+
+### Refactor
+
+- remove install.components from build configuration
+
+## v0.2.1 (2026-02-01)
+
+### Refactor
+
+- remove macOS universal2 architecture setting from build wheels step
+
+## v0.2.0 (2026-02-01)
+
+### Feat
+
+- add support for universal2 wheels on macOS
+
+## v0.1.8 (2026-02-01)
+
+### Refactor
+
+- simplify macOS build configuration in release workflow
+
+## v0.1.7 (2026-02-01)
+
+### Refactor
+
+- clean up function names and imports in submodules
+
+## v0.1.6 (2026-02-01)
+
+### Fix
+
+- add support for building wheels on both macOS architectures
+
+## v0.1.5 (2026-02-01)
+
+### Fix
+
+- remove unnecessary wheel.py-api configuration from pyproject.toml
+
+## v0.1.4 (2026-02-01)
+
+### Fix
+
+- streamline Cython compilation process by removing redundant commands
+
+## v0.1.3 (2026-02-01)
+
+### Fix
+
+- update project languages in CMakeLists.txt and enhance Cython compilation process
+
+## v0.1.2 (2026-02-01)
+
+### Fix
+
+- update wheel.exclude to prevent exclusion of __init__.py files
+
 ## v0.1.1 (2026-02-01)
 
 ### Fix
