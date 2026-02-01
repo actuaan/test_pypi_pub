@@ -1,6 +1,6 @@
 [project]
 name = "test_pypi_pru"
-version = "0.0.2"
+version = "0.1.0"
 authors = [
   { name="Example Author", email="author@example.com" },
 ]
@@ -31,16 +31,22 @@ build-backend = "scikit_build_core.build"
 cmake.minimum-version = "3.20"
 wheel.packages = ["src/test_pypi_pru"]
 cmake.build-type = "Release"
-
+wheel.exclude = ["*.py"]  # Excluir archivos .py del wheel
+wheel.py-api = "py3"
 
 [tool.setuptools.packages.find]
 where = ["src"]
 include = ["test_pypi_pru*"] # include = ["latuca*"]
 
 [tool.setuptools]
-include-package-data = false
+include-package-data = true
+
+[tool.setuptools.package-data]
+"*" = ["__init__.py"]  # Solo incluir __init__.py
 
 [tool.commitizen]
 name = "cz_conventional_commits"
 tag_format = "v$version"
-update_changelog_on_bump = true
+update_changelog_on_bump = false  # Desactivado temporalmente
+version_provider = "pep621"
+annotated_tag = true
