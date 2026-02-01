@@ -1,3 +1,9 @@
+## v0.2.3 (2026-02-01)
+
+### Refactor
+
+- update wheel.exclude to exclude all .py files except __init__.py
+
 ## v0.2.2 (2026-02-01)
 
 ### Refactor
