@@ -1,6 +1,6 @@
 [project]
 name = "test_pypi_pru"
-version = "0.1.0"
+version = "0.1.1"
 authors = [
   { name="Example Author", email="author@example.com" },
 ]
@@ -28,11 +28,12 @@ requires = [
 build-backend = "scikit_build_core.build"
 
 [tool.scikit-build]
-cmake.minimum-version = "3.20"
+cmake.version = ">=3.20"
 wheel.packages = ["src/test_pypi_pru"]
 cmake.build-type = "Release"
-wheel.exclude = ["*.py"]  # Excluir archivos .py del wheel
 wheel.py-api = "py3"
+# NO usar wheel.exclude porque eliminaría también los __init__.py
+# La exclusión de .py compilados se maneja en CMakeLists.txt
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -47,6 +48,6 @@ include-package-data = true
 [tool.commitizen]
 name = "cz_conventional_commits"
 tag_format = "v$version"
-update_changelog_on_bump = false  # Desactivado temporalmente
+update_changelog_on_bump = true
 version_provider = "pep621"
 annotated_tag = true
