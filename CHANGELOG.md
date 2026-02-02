@@ -1,3 +1,9 @@
+## v0.2.5 (2026-02-02)
+
+### Refactor
+
+- update cibuildwheel version and specify Python builds in release workflow
+
 ## v0.2.4 (2026-02-02)
 
 ### Refactor
