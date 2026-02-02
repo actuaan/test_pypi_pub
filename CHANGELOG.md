@@ -1,3 +1,21 @@
+## v0.2.9 (2026-02-02)
+
+### Fix
+
+- update Cython installation and compilation commands for improved docstring handling
+
+## v0.2.8 (2026-02-02)
+
+### Refactor
+
+- enhance docstrings across modules for clarity and consistency
+
+## v0.2.7 (2026-02-02)
+
+### Refactor
+
+- update compile_py_module function to correctly generate PYX and CPP file names
+
 ## v0.2.6 (2026-02-02)
 
 ### Refactor
