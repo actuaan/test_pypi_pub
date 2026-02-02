@@ -1,3 +1,9 @@
+## v0.2.6 (2026-02-02)
+
+### Refactor
+
+- update compile_py_module function to include TARGET_NAME parameter
+
 ## v0.2.5 (2026-02-02)
 
 ### Refactor

@@ -1,6 +1,6 @@
 [project]
 name = "test_pypi_pru"
-version = "0.2.5"
+version = "0.2.6"
 authors = [
   { name="Example Author", email="author@example.com" },
 ]
