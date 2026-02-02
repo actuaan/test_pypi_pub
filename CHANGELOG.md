@@ -1,3 +1,9 @@
+## v0.2.10 (2026-02-02)
+
+### Fix
+
+- correct func2 documentation and implementation to reflect squaring behavior
+
 ## v0.2.9 (2026-02-02)
 
 ### Fix
