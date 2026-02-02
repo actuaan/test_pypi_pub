@@ -1,3 +1,9 @@
+## v0.2.4 (2026-02-02)
+
+### Refactor
+
+- update workflow to run on Windows instead of macOS
+
 ## v0.2.3 (2026-02-01)
 
 ### Refactor
