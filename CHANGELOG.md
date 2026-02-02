@@ -1,3 +1,21 @@
+## v0.3.0 (2026-02-02)
+
+### Feat
+
+- add type hint stubs for main, modulo1, and modulo2 modules
+
+## v0.2.12 (2026-02-02)
+
+### Fix
+
+- remove unnecessary Cython flag for docstrings in CMake configuration
+
+## v0.2.11 (2026-02-02)
+
+### Fix
+
+- add missing Salary data to sample DataFrame in modulo2.py
+
 ## v0.2.10 (2026-02-02)
 
 ### Fix
