@@ -1,3 +1,9 @@
+## v0.6.16 (2026-02-03)
+
+### Fix
+
+- update installation paths in CMakeLists.txt to use SKBUILD_PLATLIB_DIR and remove wheel.packages from pyproject.toml
+
 ## v0.6.15 (2026-02-03)
 
 ### Fix
