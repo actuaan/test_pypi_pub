@@ -1,6 +1,6 @@
 [project]
 name = "test_pypi_pru"
-version = "0.6.1"
+version = "0.6.3"
 authors = [
   { name="Example Author", email="author@example.com" },
 ]
@@ -32,12 +32,14 @@ build-backend = "scikit_build_core.build"
 cmake.version = ">=3.20"
 wheel.packages = ["src/test_pypi_pru"]
 cmake.build-type = "Release"
-# Excluir archivos .py del wheel, excepto __init__.py y .pyi (stubs)
+# Excluir archivos .py del wheel, excepto __init__.py
+# Los .pyi se instalan via CMake install() así que NO los excluimos aquí
 wheel.exclude = [
     "**.py",
-    "!**/__init__.py", # Incluir __init__.py
-    "!**.pyi"  # Incluir archivos stub
+    "!**/__init__.py"
 ]
+# Asegurar que se incluyen archivos de tipo en el wheel
+install.components = ["runtime"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

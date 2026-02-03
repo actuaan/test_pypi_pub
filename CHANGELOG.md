@@ -1,3 +1,15 @@
+## v0.6.3 (2026-02-03)
+
+### Fix
+
+- simplify .pyi generation by copying source files
+
+## v0.6.2 (2026-02-03)
+
+### Fix
+
+- robust .pyi stub generation and installation in wheels
+
 ## v0.6.1 (2026-02-03)
 
 ### Fix
