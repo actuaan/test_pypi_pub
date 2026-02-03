@@ -1,3 +1,9 @@
+## v0.6.13 (2026-02-03)
+
+### Fix
+
+- update CMakeLists.txt and pyproject.toml for improved build configuration and debugging
+
 ## v0.6.12 (2026-02-03)
 
 ### Fix
