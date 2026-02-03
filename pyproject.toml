@@ -1,6 +1,6 @@
 [project]
 name = "test_pypi_pru"
-version = "0.6.11"
+version = "0.6.12"
 authors = [
   { name="Example Author", email="author@example.com" },
 ]
@@ -32,7 +32,8 @@ build-backend = "scikit_build_core.build"
 [tool.scikit-build]
 cmake.version = ">=3.20"
 cmake.build-type = "Release"
-wheel.packages = ["test_pypi_pru"]
+wheel.packages = ["test_pypi_pru"]  # ✅ Debe estar presente
+wheel.install-dir = "test_pypi_pru"  # ✅ AÑADIR ESTO - especifica dónde instalar
 
 # ✅ MEJORA: Optimizaciones de build
 cmake.args = [

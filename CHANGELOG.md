@@ -1,3 +1,9 @@
+## v0.6.12 (2026-02-03)
+
+### Fix
+
+- add debug message for module build and specify wheel install directory
+
 ## v0.6.11 (2026-02-03)
 
 ### Fix
