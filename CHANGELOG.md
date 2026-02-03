@@ -1,3 +1,9 @@
+## v0.6.14 (2026-02-03)
+
+### Fix
+
+- add global target list for compiled modules and create build_all_modules target
+
 ## v0.6.13 (2026-02-03)
 
 ### Fix
