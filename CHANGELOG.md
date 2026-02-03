@@ -1,3 +1,9 @@
+## v0.6.11 (2026-02-03)
+
+### Fix
+
+- update wheel package path in pyproject.toml
+
 ## v0.6.10 (2026-02-03)
 
 ### Fix

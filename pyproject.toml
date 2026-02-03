@@ -1,6 +1,6 @@
 [project]
 name = "test_pypi_pru"
-version = "0.6.10"
+version = "0.6.11"
 authors = [
   { name="Example Author", email="author@example.com" },
 ]
@@ -32,7 +32,7 @@ build-backend = "scikit_build_core.build"
 [tool.scikit-build]
 cmake.version = ">=3.20"
 cmake.build-type = "Release"
-# wheel.packages = ["src/test_pypi_pru"] -- ELIMINAR
+wheel.packages = ["test_pypi_pru"]
 
 # ✅ MEJORA: Optimizaciones de build
 cmake.args = [
