@@ -1,3 +1,9 @@
+## v0.6.17 (2026-02-03)
+
+### Fix
+
+- correct install(TARGETS) for Python MODULE libraries
+
 ## v0.6.16 (2026-02-03)
 
 ### Fix
