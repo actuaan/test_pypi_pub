@@ -1,3 +1,33 @@
+## v0.6.8 (2026-02-03)
+
+### Fix
+
+- update license configuration in pyproject.toml for clarity
+
+## v0.6.7 (2026-02-03)
+
+### Fix
+
+- update cibuildwheel version and enhance build verbosity for better debugging
+
+## v0.6.6 (2026-02-03)
+
+### Fix
+
+- optimize dependency installation and update version detection logic
+
+## v0.6.5 (2026-02-03)
+
+### Fix
+
+- enhance CI/CD workflow and CMake configuration for improved build efficiency
+
+## v0.6.4 (2026-02-03)
+
+### Fix
+
+- correct .pyi install command to restore binary installation
+
 ## v0.6.3 (2026-02-03)
 
 ### Fix

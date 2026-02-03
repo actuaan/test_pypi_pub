@@ -1,6 +1,6 @@
 [project]
 name = "test_pypi_pru"
-version = "0.6.3"
+version = "0.6.8"
 authors = [
   { name="Example Author", email="author@example.com" },
 ]
@@ -11,8 +11,9 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
 ]
-license = "MIT"
-license-files = ["LICENSE*"]
+
+# license = "MIT" pon esto o lo siguiente si existe el fichero LICENSE en la raíz
+license = {file = "LICENSE"}
 
 dependencies = ["pandas", "numpy"]
 
@@ -22,7 +23,7 @@ requires = [
   "setuptools>=61.0",
   "wheel",
   "cython>=3.0",
-  "numpy",
+  "numpy>=1.24",  # ✅ Especificar versión mínima
   "mypy"  # Necesario para stubgen
   # QUITAR "pandas" de aquí - no es necesario para compilar
 ]
@@ -30,26 +31,25 @@ build-backend = "scikit_build_core.build"
 
 [tool.scikit-build]
 cmake.version = ">=3.20"
-wheel.packages = ["src/test_pypi_pru"]
 cmake.build-type = "Release"
+wheel.packages = ["src/test_pypi_pru"]
+
+# ✅ MEJORA: Optimizaciones de build
+cmake.args = [
+  "-DCMAKE_BUILD_PARALLEL_LEVEL=4",
+  "-DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON",  # Solo si funciona bien
+]
+
 # Excluir archivos .py del wheel, excepto __init__.py
 # Los .pyi se instalan via CMake install() así que NO los excluimos aquí
 wheel.exclude = [
     "**.py",
-    "!**/__init__.py"
+    "!**/__init__.py",
+    "**.pyc",
+    "**/__pycache__",
 ]
 # Asegurar que se incluyen archivos de tipo en el wheel
 install.components = ["runtime"]
-
-[tool.setuptools.packages.find]
-where = ["src"]
-include = ["test_pypi_pru*"] # include = ["latuca*"]
-
-[tool.setuptools]
-include-package-data = true
-
-[tool.setuptools.package-data]
-"*" = ["__init__.py"]  # Solo incluir __init__.py
 
 [tool.commitizen]
 name = "cz_conventional_commits"
