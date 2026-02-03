@@ -1,3 +1,15 @@
+## v0.5.0 (2026-02-02)
+
+### Feat
+
+- enhance CMake configuration for stub generation and add requirements.txt
+
+## v0.4.0 (2026-02-02)
+
+### Feat
+
+- update release workflow and CMake configuration to generate type stubs
+
 ## v0.3.0 (2026-02-02)
 
 ### Feat
