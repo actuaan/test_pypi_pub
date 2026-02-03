@@ -1,3 +1,9 @@
+## v0.6.15 (2026-02-03)
+
+### Fix
+
+- update compile_py_module function to use subdirectories for avoiding collisions
+
 ## v0.6.14 (2026-02-03)
 
 ### Fix
