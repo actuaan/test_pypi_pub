@@ -1,3 +1,15 @@
+## v0.6.10 (2026-02-03)
+
+### Fix
+
+- correct license field name in pyproject.toml
+
+## v0.6.9 (2026-02-03)
+
+### Fix
+
+- correct license field name in pyproject.toml
+
 ## v0.6.8 (2026-02-03)
 
 ### Fix
