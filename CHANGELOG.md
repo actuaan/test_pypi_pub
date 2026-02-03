@@ -1,3 +1,21 @@
+## v0.6.1 (2026-02-03)
+
+### Fix
+
+- improve stub generation process and ensure optional installation of .pyi files
+
+## v0.6.0 (2026-02-03)
+
+### Feat
+
+- update func3 to compute quadratic (value + 1)^2 and adjust docstring
+
+## v0.5.1 (2026-02-03)
+
+### Fix
+
+- update Python version requirement and add mypy dependency; adjust stub generation path and wheel exclusion rules
+
 ## v0.5.0 (2026-02-02)
 
 ### Feat

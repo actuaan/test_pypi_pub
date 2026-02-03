@@ -1,12 +1,12 @@
 [project]
 name = "test_pypi_pru"
-version = "0.5.0"
+version = "0.6.1"
 authors = [
   { name="Example Author", email="author@example.com" },
 ]
 description = "Proyecto compilado con Cython (Binarios solamente). Proyecto empaquetado con scikit-build-core y setuptools"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.11"
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
@@ -22,7 +22,8 @@ requires = [
   "setuptools>=61.0",
   "wheel",
   "cython>=3.0",
-  "numpy"
+  "numpy",
+  "mypy"  # Necesario para stubgen
   # QUITAR "pandas" de aquí - no es necesario para compilar
 ]
 build-backend = "scikit_build_core.build"
@@ -31,10 +32,11 @@ build-backend = "scikit_build_core.build"
 cmake.version = ">=3.20"
 wheel.packages = ["src/test_pypi_pru"]
 cmake.build-type = "Release"
-# Excluir archivos .py del wheel, excepto __init__.py
+# Excluir archivos .py del wheel, excepto __init__.py y .pyi (stubs)
 wheel.exclude = [
     "**.py",
-    "!**/__init__.py"
+    "!**/__init__.py", # Incluir __init__.py
+    "!**.pyi"  # Incluir archivos stub
 ]
 
 [tool.setuptools.packages.find]
