@@ -1,6 +1,6 @@
 [project]
 name = "test_pypi_pru"
-version = "0.6.17"
+version = "0.7.1"
 authors = [
   { name="Example Author", email="author@example.com" },
 ]
@@ -15,7 +15,18 @@ classifiers = [
 # license = "MIT" pon esto o lo siguiente si existe el fichero LICENSE en la raíz
 license = {file = "LICENSE"}
 
-dependencies = ["pandas", "numpy"]
+dependencies = [
+  "pandas>=3.0.0",
+  "numpy>=2.4.2"
+]
+
+[project.optional-dependencies]
+docs = [
+  "mkdocs-material>=9.5",
+  "mkdocstrings[python]>=0.24",
+  "pymdown-extensions>=10.7",
+  "mike>=2.0"
+]
 
 [build-system]
 requires = [

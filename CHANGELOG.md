@@ -1,3 +1,24 @@
+## v0.7.1 (2026-02-04)
+
+### Fix
+
+- Update docs deployment to clone and copy instead of remote push
+
+## v0.7.0 (2026-02-04)
+
+### Feat
+
+- enhance documentation and setup for mkdocs with new guides and examples
+
+### Fix
+
+- update dependencies in pyproject.toml to specify minimum versions for pandas and numpy
+- streamline version detection logic in __init__.py
+
+### Refactor
+
+- update section headers and improve clarity in notas.md
+
 ## v0.6.17 (2026-02-03)
 
 ### Fix
