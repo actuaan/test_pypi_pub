@@ -1,3 +1,27 @@
+## v0.8.3 (2026-02-05)
+
+### Fix
+
+- comment out wheel validation step before publishing
+
+## v0.8.2 (2026-02-05)
+
+### Fix
+
+- update scikit-build-core version and clarify license-files entry in pyproject.toml
+
+## v0.8.1 (2026-02-05)
+
+### Fix
+
+- correct license-files entry in pyproject.toml
+
+## v0.8.0 (2026-02-05)
+
+### Feat
+
+- update release workflow, enhance license information, and improve project metadata
+
 ## v0.7.2 (2026-02-05)
 
 ### Fix

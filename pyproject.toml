@@ -1,24 +1,53 @@
 [project]
 name = "test_pypi_pru"
-version = "0.7.2"
+version = "0.8.3"
 authors = [
   { name="Example Author", email="author@example.com" },
 ]
+maintainers = [
+  {name = "Example Maintainer", email = "maintainer@example.com"},
+]
 description = "Proyecto compilado con Cython (Binarios solamente). Proyecto empaquetado con scikit-build-core y setuptools"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.14"
 classifiers = [
+    # Specify the Python versions you support here.
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
+    # How mature is this project? Common values are
+    #   3 - Alpha
+    #   4 - Beta
+    #   5 - Production/Stable
+    "Development Status :: 4 - Beta",
+    # Indicate who your project is intended for
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
 ]
 
-# license = "MIT" pon esto o lo siguiente si existe el fichero LICENSE en la raíz
-license = {file = "LICENSE"}
+license = "LicenseRef-Proprietary"
+license-files = ["LICENSE", "LICENSE_DOCS"] #license = { file = "LICENSE" }
+
+# Help PyPI’s search box to suggest your project when people search for these keywords
+keywords = [
+  "cython",
+  "compiled",
+  "binary",
+  "wheel",
+  "documentation",
+  "examples"
+]
 
 dependencies = [
   "pandas>=3.0.0",
   "numpy>=2.4.2"
 ]
+
+[project.urls]
+Homepage = "https://example.com"
+Documentation = "https://actuaan.github.io/test_pypi_pub/latest/"
+Repository = "https://github.com/actuaan/test_pypi_pub"
+Issues = "https://github.com/actuaan/test_pypi_pub/issues"
+Changelog = "https://github.com/actuaan/test_pypi_pub/blob/master/CHANGELOG.md"
 
 [project.optional-dependencies]
 docs = [
@@ -30,7 +59,7 @@ docs = [
 
 [build-system]
 requires = [
-  "scikit-build-core>=0.10",
+  "scikit-build-core>=0.11",
   "setuptools>=61.0",
   "wheel",
   "cython>=3.0",
