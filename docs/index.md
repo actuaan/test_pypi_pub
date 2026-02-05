@@ -63,11 +63,11 @@ test_pypi_pru/
 
 ## 🔗 Links
 
-- [GitHub Repository](https://github.com/Albaraneb/test_pypi_pub)
+- [GitHub Repository](https://github.com/actuaan/test_pypi_pub)
 - [Test PyPI Package](https://test.pypi.org/project/test-pypi-pru/)
 - [Getting Started Guide](getting-started.md)
 - [Complete API Reference](api/main.md)
 
 ## 📄 License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/Albaraneb/test_pypi_pub/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/actuaan/test_pypi_pub/blob/main/LICENSE) file for details.

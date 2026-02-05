@@ -1,3 +1,9 @@
+## v0.7.2 (2026-02-05)
+
+### Fix
+
+- update repository URLs to reflect new owner and improve documentation references
+
 ## v0.7.1 (2026-02-04)
 
 ### Fix

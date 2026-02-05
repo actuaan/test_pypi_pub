@@ -141,7 +141,7 @@ print(test_pypi_pru.__version__)
 
 - Explore the [Complete API Reference](api/main.md) to see all available functions
 - Review the [Detailed Examples](examples.md) with more complex use cases
-- Check the [source code on GitHub](https://github.com/Albaraneb/test_pypi_pub)
+- Check the [source code on GitHub](https://github.com/actuaan/test_pypi_pub)
 
 ## Troubleshooting
 
