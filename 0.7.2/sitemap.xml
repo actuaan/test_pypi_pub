@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://actuaan.github.io/test_pypi_pub/0.7.2/</loc>
+         <lastmod>2026-02-05</lastmod>
+    </url>
+    <url>
+         <loc>https://actuaan.github.io/test_pypi_pub/0.7.2/document/</loc>
+         <lastmod>2026-02-05</lastmod>
+    </url>
+    <url>
+         <loc>https://actuaan.github.io/test_pypi_pub/0.7.2/examples/</loc>
+         <lastmod>2026-02-05</lastmod>
+    </url>
+    <url>
+         <loc>https://actuaan.github.io/test_pypi_pub/0.7.2/getting-started/</loc>
+         <lastmod>2026-02-05</lastmod>
+    </url>
+    <url>
+         <loc>https://actuaan.github.io/test_pypi_pub/0.7.2/api/main/</loc>
+         <lastmod>2026-02-05</lastmod>
+    </url>
+    <url>
+         <loc>https://actuaan.github.io/test_pypi_pub/0.7.2/api/sub1/</loc>
+         <lastmod>2026-02-05</lastmod>
+    </url>
+    <url>
+         <loc>https://actuaan.github.io/test_pypi_pub/0.7.2/api/sub2/</loc>
+         <lastmod>2026-02-05</lastmod>
+    </url>
+</urlset>
