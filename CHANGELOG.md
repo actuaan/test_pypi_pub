@@ -1,3 +1,10 @@
+## v0.8.4 (2026-02-05)
+
+### Fix
+
+- streamline documentation deployment process in release workflow
+- remove wheel validation step before publishing to Test PyPI
+
 ## v0.8.3 (2026-02-05)
 
 ### Fix
