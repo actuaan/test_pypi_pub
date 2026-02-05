@@ -1,3 +1,9 @@
+## v0.9.0 (2026-02-05)
+
+### Feat
+
+- generate versions.json for available versions in documentation
+
 ## v0.8.4 (2026-02-05)
 
 ### Fix
