@@ -1,6 +1,6 @@
 [project]
 name = "test_pypi_pru"
-version = "0.9.0"
+version = "0.13.0"
 authors = [
   { name="Example Author", email="author@example.com" },
 ]
@@ -94,6 +94,6 @@ install.components = ["runtime"]
 [tool.commitizen]
 name = "cz_conventional_commits"
 tag_format = "v$version"
-update_changelog_on_bump = true
+update_changelog_on_bump = false
 version_provider = "pep621"
 annotated_tag = true
