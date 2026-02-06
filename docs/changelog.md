@@ -1,6 +1,3 @@
-# Changelog
-
-All notable changes to this project are documented below.
 ## **[0.14.0]** <small>February 06, 2026</small> { id="0.14.0" }
 
 
