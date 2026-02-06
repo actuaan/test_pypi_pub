@@ -1,6 +1,44 @@
 # Changelog
 
 All notable changes to this project are documented below.
+## **[0.14.0]** <small>February 06, 2026</small> { id="0.14.0" }
+
+
+### Fixed
+
+- Update git clone command to fetch all branches for public repo sync (`3c59c76`)
+- Update changelog template to handle unknown dates correctly (`cd6395f`)
+
+### Added
+
+- Enhance changelog generation by adding tag verification and minimal changelog fallback (`ac05d9e`)
+- Enhance git-cliff installation by improving version extraction and URL construction (`93912dd`)
+- Improve git-cliff installation by fetching the latest release version dynamically (`e7d2c05`)
+## **[0.13.0]** <small>February 06, 2026</small> { id="0.13.0" }
+
+
+### Added
+
+- Feat: add documentation and public repo sync workflow with changelog generation and deployment
+refactor: update release workflow to separate documentation build and public repo sync steps (`291cf1d`)
+## **[0.12.0]** <small>February 06, 2026</small> { id="0.12.0" }
+
+
+### Added
+
+- Update git-cliff installation to use the latest version and improve binary detection (`edf7153`)
+## **[0.11.0]** <small>February 06, 2026</small> { id="0.11.0" }
+
+
+### Added
+
+- Enhance documentation workflow with improved caching, error handling, and changelog generation (`8bfc4b4`)
+## **[0.10.0]** <small>February 06, 2026</small> { id="0.10.0" }
+
+
+### Added
+
+- Enhance documentation generation with changelog and new plugins (`e4ad8bd`)
 ## **[0.9.0]** <small>February 05, 2026</small> { id="0.9.0" }
 
 
@@ -358,6 +396,11 @@ All notable changes to this project are documented below.
 - :rocket: release v0.0.1 (`5e78403`)
 - :rocket: release 0.0.4 (`76d9a73`)
 
+### Documentation
+
+- Enhance documentation and add functions in latuca package; include docstrings for modules and functions (`39276ad`)
+- Update release workflow to use new token and improve file copying logic; enhance repository notes and add documentation file (`82051e5`)
+
 ### Added
 
 - Add annotated_tag configuration for commitizen (`7ece40d`)
@@ -368,3 +411,22 @@ All notable changes to this project are documented below.
 - Prueba de commitizen con push automático (`16acb33`)
 - Feat: prueba del workflow con cz bump (`227fd82`)
 - :sparkles: Modifica el toml, yml, añade control de versiones (`a0b872f`)
+- Add permissions section to release-drafter workflow for content write access (`45ca3e2`)
+- Add func_3 to sub1.modulo1 and update exports in __init__.py (`7b5c4a2`)
+- Add Release Drafter configuration and enhance release workflow with pip caching (`a3c57db`)
+- Add initial implementation of test_pypi_pru package with modules and functions (`49be867`)
+- Add initial implementation of latuca package with modules and functions (`bcb2590`)
+- Add VSCode settings for pinned GitHub Actions workflows (`2076969`)
+- Add initial project structure with CMake configuration, GitHub Actions workflow, and example modules (`0a96371`)
+
+### Changed
+
+- Update func2 to double the input value before rounding (`29ac808`)
+- Update workflow to publish to Test PyPI with specified repository URL (`f8a054f`)
+- Update workflow name for clarity: 'Release and Sync Public' to 'Release in test-PyPI and Sync Public' (`466c479`)
+- Update Windows environment variables in GitHub Actions and remove unnecessary pandas dependency from pyproject.toml (`f8909da`)
+- Enhance GitHub Actions workflow: add Windows-specific configurations and cleanup steps (`3df4857`)
+- Enhance compile_py_module function: add custom command to generate .pyx file from .py source (`fcc9ba7`)
+- Enhance CMake configuration: ensure target is treated as C++ for linking in compile_py_module function (`3c3d976`)
+- Update build step in release workflow to install specific dependencies for wheel building (`4710a8e`)
+- Update repository URL in notes and add verification steps (`5369149`)
