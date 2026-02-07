@@ -1,6 +1,6 @@
 [project]
 name = "test_pypi_pru"
-version = "0.14.0"
+version = "0.16.0"
 authors = [
   { name="Example Author", email="author@example.com" },
 ]
@@ -68,6 +68,20 @@ requires = [
   # QUITAR "pandas" de aquí - no es necesario para compilar
 ]
 build-backend = "scikit_build_core.build"
+
+# ============================================================================
+# Compilación con perfil BALANCED de seguridad Cython
+# ============================================================================
+# - Código fuente NO incluido en binarios (emit_code_comments=False)
+# - Firmas de funciones NO expuestas (embedsignature=False)
+# - Símbolos de depuración eliminados (strip --strip-all en Linux/macOS)
+# - Optimización -O2 para balance rendimiento/seguridad
+# - Perfil configurable: DEBUG (desarrollo) | BALANCED (prod) | STRICT (máxima seguridad)
+#
+# Cambiar perfil:
+#   export CYTHON_SECURITY_PROFILE=STRICT
+#   python -m build
+# ============================================================================
 
 [tool.scikit-build]
 cmake.version = ">=3.20"
