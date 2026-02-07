@@ -1,6 +1,6 @@
 [project]
 name = "test_pypi_pru"
-version = "0.16.0"
+version = "0.17.1"
 authors = [
   { name="Example Author", email="author@example.com" },
 ]
@@ -63,8 +63,7 @@ requires = [
   "setuptools>=61.0",
   "wheel",
   "cython>=3.0",
-  "numpy>=1.24",  # ✅ Especificar versión mínima
-  "mypy"  # Necesario para stubgen
+  "numpy>=1.24"  # ✅ Especificar versión mínima
   # QUITAR "pandas" de aquí - no es necesario para compilar
 ]
 build-backend = "scikit_build_core.build"
