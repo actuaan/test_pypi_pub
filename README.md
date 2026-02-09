@@ -13,9 +13,9 @@ A compiled Cython package demonstrating professional packaging with scikit-build
 - ✅ **Complete type hints** with `.pyi` stub files
 - ✅ **Optimized numerical functions** with NumPy
 - ✅ **DataFrame utilities** with Pandas
-- ✅ **Comprehensive documentation** with Sphinx + Furo theme
-- ✅ **Actuarial mathematics** support with MathJax
-- ✅ **Automated versioning** with multi-version docs
+- ✅ **Comprehensive documentation** with Sphinx + PyData theme (NumPy style)
+- ✅ **Actuarial mathematics** support with MathJax v3
+- ✅ **Automated changelog** generation with git-cliff
 
 ## 📦 Installation
 
@@ -33,7 +33,7 @@ pip install test-pypi-pru
 
 ### Requirements
 
-- Python >= 3.14
+- Python >= 3.10
 - NumPy >= 2.4.2
 - Pandas >= 3.0.0
 
@@ -123,10 +123,10 @@ python -m pip install --no-build-isolation -ve .
 ### Documentation System
 
 This project uses **Sphinx** with:
-- **Furo** theme for modern UI
+- **PyData Sphinx Theme** for NumPy-style documentation
 - **MyST-Parser** for Markdown support
 - **MathJax v3** for LaTeX math rendering
-- **sphinx-multiversion** for versioned docs
+- **Open Sans** (body) + **Lato** (headings) typography
 - Custom actuarial macros (`\ax{n}`, `\npx{k}{x}`, etc.)
 
 ## 📦 Release Process
@@ -134,9 +134,9 @@ This project uses **Sphinx** with:
 Releases are automated via GitHub Actions:
 
 1. **Create tag**: `git tag v0.x.x && git push --tags`
-2. **Build wheels**: Automated for Windows, macOS, Linux
+2. **Build wheels**: Automated for Windows, macOS, Linux (Python 3.14)
 3. **Deploy to Test PyPI**: Automated upload
-4. **Build docs**: Sphinx multi-version build
+4. **Build docs**: Sphinx with PyData theme (Python 3.12)
 5. **Deploy docs**: Pushed to public repo `gh-pages` branch
 
 ### Security Profiles
@@ -163,6 +163,6 @@ Documentation is under separate license: [LICENSE_DOCS](LICENSE_DOCS).
 ## 🙏 Acknowledgments
 
 - Built with [scikit-build-core](https://scikit-build-core.readthedocs.io/)
-- Documentation with [Sphinx](https://www.sphinx-doc.org/) and [Furo](https://pradyunsg.me/furo/)
+- Documentation with [Sphinx](https://www.sphinx-doc.org/) and [PyData theme](https://pydata-sphinx-theme.readthedocs.io/)
 - Type stubs with [mypy](https://mypy-lang.org/)
 - Changelog with [git-cliff](https://git-cliff.org/)

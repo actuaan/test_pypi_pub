@@ -1,0 +1,82 @@
+# cliff.toml — "Keep a Changelog" style, grouped by version + date
+
+[changelog]
+header = """# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+"""
+trim = true
+
+body = """
+{% if version -%}
+## [{{ version | trim_start_matches(pat="v") }}] - {% if timestamp %}{{ timestamp | date(format="%B %d, %Y") }}{% else %}Unknown Date{% endif %}
+{% for group, commits in commits | group_by(attribute="group") %}
+{% if group == "Features" %}
+### Added
+{% for commit in commits %}
+- {{ commit.message | upper_first }} (`{{ commit.id | truncate(length=7, end="") }}`)
+{%- endfor -%}
+{% elif group == "Bug Fixes" %}
+### Fixed
+{% for commit in commits %}
+- {{ commit.message | upper_first }} (`{{ commit.id | truncate(length=7, end="") }}`)
+{%- endfor -%}
+{% elif group == "Documentation" %}
+### Documentation
+{% for commit in commits %}
+- {{ commit.message | upper_first }} (`{{ commit.id | truncate(length=7, end="") }}`)
+{%- endfor -%}
+{% elif group == "Performance" %}
+### Performance
+{% for commit in commits %}
+- {{ commit.message | upper_first }} (`{{ commit.id | truncate(length=7, end="") }}`)
+{%- endfor -%}
+{% elif group == "Refactoring" %}
+### Changed
+{% for commit in commits %}
+- {{ commit.message | upper_first }} (`{{ commit.id | truncate(length=7, end="") }}`)
+{%- endfor -%}
+{% elif group == "Removed" %}
+### Removed
+{% for commit in commits %}
+- {{ commit.message | upper_first }} (`{{ commit.id | truncate(length=7, end="") }}`)
+{%- endfor -%}
+{% elif group != "Release" %}
+### {{ group }}
+{% for commit in commits %}
+- {{ commit.message | upper_first }} (`{{ commit.id | truncate(length=7, end="") }}`)
+{%- endfor -%}
+{% endif -%}
+{% endfor -%}
+{% endif -%}
+"""
+
+[git]
+conventional_commits = true
+filter_unconventional = false
+tag_pattern = "v*"
+sort_commits = "newest"
+
+# Commit parsers: classify bump/version commits as 'Release' so they can be hidden
+commit_parsers = [
+	# Conventional Commits
+	{ message = "^feat", group = "Features" },
+	{ message = "^fix", group = "Bug Fixes" },
+	{ message = "^doc", group = "Documentation" },
+	{ message = "^perf", group = "Performance" },
+	{ message = "^refactor", group = "Refactoring" },
+	{ message = "^test", group = "Tests" },
+	{ message = "^chore", group = "Chores" },
+	# Common patterns (Update, Enhance, Add, etc.)
+	{ message = "(?i)^(update|enhance|improve).*fix", group = "Bug Fixes" },
+	{ message = "(?i)^(add|enhance|improve|update).*doc", group = "Documentation" },
+	{ message = "(?i)^(add|implement)", group = "Features" },
+	{ message = "(?i)^(update|enhance|improve|optimize)", group = "Refactoring" },
+	{ message = "(?i)^(remove|delete)", group = "Removed" },
+	# Release/version commits - these are filtered out in the template
+	{ message = '(?i)^(bump|bumped|version\s+\d|chore\(release\))', group = "Release" }
+]
