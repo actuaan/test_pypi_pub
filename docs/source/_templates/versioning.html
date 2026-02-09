@@ -1,0 +1,63 @@
+{% if versions %}
+<div class="version-dropdown">
+  <label for="version-select">Version:</label>
+  <select id="version-select" onchange="location = this.value;">
+    {% for item in versions %}
+      <option value="{{ item.url }}"{% if item.is_current %} selected{% endif %}>
+        {{ item.name }}{% if item.is_current %} (current){% endif %}
+      </option>
+    {% endfor %}
+  </select>
+</div>
+
+<style>
+.version-dropdown {
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-background-secondary);
+}
+
+.version-dropdown label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--color-foreground-secondary);
+}
+
+.version-dropdown select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--color-background-border);
+  border-radius: 4px;
+  background-color: var(--color-background-primary);
+  color: var(--color-foreground-primary);
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.version-dropdown select:hover {
+  border-color: var(--color-brand-primary);
+}
+</style>
+
+<script>
+// Version warning banner for outdated docs
+(function() {
+  if (window.location.pathname.match(/v\d+\.\d+\.\d+/)) {
+    var currentVersion = window.location.pathname.match(/v(\d+\.\d+\.\d+)/)[1];
+    var latestVersion = "{{ versions[0].name if versions else 'latest' }}";
+    
+    if (currentVersion !== latestVersion && latestVersion !== 'latest') {
+      var banner = document.createElement('div');
+      banner.innerHTML = 
+        '⚠️ You are viewing documentation for v' + currentVersion + '. ' +
+        '<a href="/latest/" style="color: white; text-decoration: underline;">View latest (' + latestVersion + ')</a>';
+      banner.style.cssText = 
+        'background: #ff9800; color: white; padding: 10px; text-align: center; ' +
+        'position: sticky; top: 0; z-index: 1000; font-weight: 500;';
+      document.body.insertBefore(banner, document.body.firstChild);
+    }
+  }
+})();
+</script>
+{% endif %}
