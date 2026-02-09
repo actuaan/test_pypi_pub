@@ -1,0 +1,1534 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" data-theme="light">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Changelog &#8212; test-pypi-pru 0.17.4</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=658b03e1" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=f04cce2a"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'changelog';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Submodule 2: DataFrame Utilities" href="api/sub2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.17.4" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="light">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">test-pypi-pru</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="getting-started.html">
+    Getting Started
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="examples.html">
+    Detailed Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="api/main.html">
+    Main Module
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="api/sub1.html">
+    Submodule 1: Numerical Functions
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="api/sub2.html">
+    Submodule 2: DataFrame Utilities
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
+    Changelog
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button></div>
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/actuaan/test_pypi_pub" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="getting-started.html">
+    Getting Started
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="examples.html">
+    Detailed Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="api/main.html">
+    Main Module
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="api/sub1.html">
+    Submodule 1: Numerical Functions
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="api/sub2.html">
+    Submodule 2: DataFrame Utilities
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="#">
+    Changelog
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button></div>
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/actuaan/test_pypi_pub" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"></div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Changelog</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="changelog">
+<h1>Changelog<a class="headerlink" href="#changelog" title="Link to this heading">#</a></h1>
+<p>All notable changes to this project will be documented in this file.</p>
+<p>The format is based on <a class="reference external" href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
+and this project adheres to <a class="reference external" href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
+<section id="february-09-2026">
+<h2>[0.17.4] - February 09, 2026<a class="headerlink" href="#february-09-2026" title="Link to this heading">#</a></h2>
+<section id="chores">
+<h3>Chores<a class="headerlink" href="#chores" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Bump version to 0.17.4 (<code class="docutils literal notranslate"><span class="pre">f3244aa</span></code>)</p></li>
+</ul>
+</section>
+<section id="documentation">
+<h3>Documentation<a class="headerlink" href="#documentation" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Add Sphinx documentation setup and examples for test-pypi-pru</p></li>
+<li><p>Created Sphinx configuration file (conf.py) for documentation generation.</p></li>
+<li><p>Added detailed examples in examples.md showcasing package functionalities.</p></li>
+<li><p>Introduced getting started guide in getting-started.md for user onboarding.</p></li>
+<li><p>Developed index.md as the main entry point for documentation.</p></li>
+<li><p>Backed up previous MkDocs configuration in mkdocs.yml.backup.</p></li>
+<li><p>Updated pyproject.toml to include Sphinx and related dependencies.</p></li>
+<li><p>Enhanced serve-docs.sh to build and serve Sphinx documentation locally.</p></li>
+<li><p>Implemented annuity_present_value function in main.py with detailed docstring and MathJax support. (<code class="docutils literal notranslate"><span class="pre">ee61630</span></code>)</p></li>
+</ul>
+</section>
+<section id="removed">
+<h3>Removed<a class="headerlink" href="#removed" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Remove TODO document for Test → Promote → Production pattern implementation (<code class="docutils literal notranslate"><span class="pre">1ad021b</span></code>)## [0.17.3] - February 07, 2026</p></li>
+</ul>
+</section>
+<section id="changed">
+<h3>Changed<a class="headerlink" href="#changed" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update CYTHON_SECURITY_PROFILE to ‘STRICT’ for enhanced security (<code class="docutils literal notranslate"><span class="pre">66a659c</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="february-07-2026">
+<h2>[0.17.2] - February 07, 2026<a class="headerlink" href="#february-07-2026" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Changed<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update func1 to use NDArray type for better type hinting (<code class="docutils literal notranslate"><span class="pre">98b73a9</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id2">
+<h2>[0.17.1] - February 07, 2026<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h3>Changed<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update numpy imports to use specific types for better clarity (<code class="docutils literal notranslate"><span class="pre">d0b83df</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id4">
+<h2>[0.17.0] - February 07, 2026<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<section id="added">
+<h3>Added<a class="headerlink" href="#added" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Add .pyi type stubs generation and update numpy dependency in pyproject.toml (<code class="docutils literal notranslate"><span class="pre">e25be93</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id5">
+<h2>[0.16.0] - February 07, 2026<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<section id="fixed">
+<h3>Fixed<a class="headerlink" href="#fixed" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update CIBW_SKIP to exclude only specific platforms (<code class="docutils literal notranslate"><span class="pre">e4e11bc</span></code>)</p></li>
+</ul>
+</section>
+<section id="id6">
+<h3>Added<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Add Cython security profiles for compilation settings (<code class="docutils literal notranslate"><span class="pre">b2d2428</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id7">
+<h2>[0.15.0] - February 07, 2026<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<section id="id8">
+<h3>Fixed<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Remove unreleased section from changelog template (<code class="docutils literal notranslate"><span class="pre">3b271e8</span></code>)</p></li>
+<li><p>Add missing –strip option to git-cliff command in serve-docs.sh (<code class="docutils literal notranslate"><span class="pre">4a1e75b</span></code>)</p></li>
+</ul>
+</section>
+<section id="id9">
+<h3>Documentation<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update serve-docs.sh comments for clarity (<code class="docutils literal notranslate"><span class="pre">c599f5b</span></code>)</p></li>
+</ul>
+</section>
+<section id="id10">
+<h3>Added<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Add initial draft for Test → Promote → Production pattern documentation (<code class="docutils literal notranslate"><span class="pre">797d62d</span></code>)</p></li>
+<li><p>Enhance changelog configuration with additional commit parser patterns (<code class="docutils literal notranslate"><span class="pre">132df28</span></code>)</p></li>
+</ul>
+</section>
+<section id="id11">
+<h3>Changed<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Enhance release and serve-docs scripts with comments and structure (<code class="docutils literal notranslate"><span class="pre">232bebb</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="february-06-2026">
+<h2>[0.14.0] - February 06, 2026<a class="headerlink" href="#february-06-2026" title="Link to this heading">#</a></h2>
+<section id="id12">
+<h3>Fixed<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update git clone command to fetch all branches for public repo sync (<code class="docutils literal notranslate"><span class="pre">3c59c76</span></code>)</p></li>
+<li><p>Update changelog template to handle unknown dates correctly (<code class="docutils literal notranslate"><span class="pre">cd6395f</span></code>)</p></li>
+</ul>
+</section>
+<section id="id13">
+<h3>Added<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Enhance changelog generation by adding tag verification and minimal changelog fallback (<code class="docutils literal notranslate"><span class="pre">ac05d9e</span></code>)</p></li>
+<li><p>Enhance git-cliff installation by improving version extraction and URL construction (<code class="docutils literal notranslate"><span class="pre">93912dd</span></code>)</p></li>
+<li><p>Improve git-cliff installation by fetching the latest release version dynamically (<code class="docutils literal notranslate"><span class="pre">e7d2c05</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id14">
+<h2>[0.13.0] - February 06, 2026<a class="headerlink" href="#id14" title="Link to this heading">#</a></h2>
+<section id="id15">
+<h3>Added<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Feat: add documentation and public repo sync workflow with changelog generation and deployment
+refactor: update release workflow to separate documentation build and public repo sync steps (<code class="docutils literal notranslate"><span class="pre">291cf1d</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id16">
+<h2>[0.12.0] - February 06, 2026<a class="headerlink" href="#id16" title="Link to this heading">#</a></h2>
+<section id="id17">
+<h3>Added<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update git-cliff installation to use the latest version and improve binary detection (<code class="docutils literal notranslate"><span class="pre">edf7153</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id18">
+<h2>[0.11.0] - February 06, 2026<a class="headerlink" href="#id18" title="Link to this heading">#</a></h2>
+<section id="id19">
+<h3>Added<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Enhance documentation workflow with improved caching, error handling, and changelog generation (<code class="docutils literal notranslate"><span class="pre">8bfc4b4</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id20">
+<h2>[0.10.0] - February 06, 2026<a class="headerlink" href="#id20" title="Link to this heading">#</a></h2>
+<section id="id21">
+<h3>Added<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Enhance documentation generation with changelog and new plugins (<code class="docutils literal notranslate"><span class="pre">e4ad8bd</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="february-05-2026">
+<h2>[0.9.0] - February 05, 2026<a class="headerlink" href="#february-05-2026" title="Link to this heading">#</a></h2>
+<section id="id22">
+<h3>Added<a class="headerlink" href="#id22" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Generate versions.json for available versions in documentation (<code class="docutils literal notranslate"><span class="pre">7c1c3ac</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id23">
+<h2>[0.8.4] - February 05, 2026<a class="headerlink" href="#id23" title="Link to this heading">#</a></h2>
+<section id="id24">
+<h3>Fixed<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Streamline documentation deployment process in release workflow (<code class="docutils literal notranslate"><span class="pre">14b2ecb</span></code>)</p></li>
+<li><p>Remove wheel validation step before publishing to Test PyPI (<code class="docutils literal notranslate"><span class="pre">31ac50c</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id25">
+<h2>[0.8.3] - February 05, 2026<a class="headerlink" href="#id25" title="Link to this heading">#</a></h2>
+<section id="id26">
+<h3>Fixed<a class="headerlink" href="#id26" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Comment out wheel validation step before publishing (<code class="docutils literal notranslate"><span class="pre">f932ca6</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id27">
+<h2>[0.8.2] - February 05, 2026<a class="headerlink" href="#id27" title="Link to this heading">#</a></h2>
+<section id="id28">
+<h3>Fixed<a class="headerlink" href="#id28" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update scikit-build-core version and clarify license-files entry in pyproject.toml (<code class="docutils literal notranslate"><span class="pre">eefd94f</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id29">
+<h2>[0.8.1] - February 05, 2026<a class="headerlink" href="#id29" title="Link to this heading">#</a></h2>
+<section id="id30">
+<h3>Fixed<a class="headerlink" href="#id30" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Correct license-files entry in pyproject.toml (<code class="docutils literal notranslate"><span class="pre">30759de</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id31">
+<h2>[0.8.0] - February 05, 2026<a class="headerlink" href="#id31" title="Link to this heading">#</a></h2>
+<section id="id32">
+<h3>Added<a class="headerlink" href="#id32" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update release workflow, enhance license information, and improve project metadata (<code class="docutils literal notranslate"><span class="pre">88c95af</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id33">
+<h2>[0.7.2] - February 05, 2026<a class="headerlink" href="#id33" title="Link to this heading">#</a></h2>
+<section id="id34">
+<h3>Fixed<a class="headerlink" href="#id34" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update repository URLs to reflect new owner and improve documentation references (<code class="docutils literal notranslate"><span class="pre">3cce573</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="february-04-2026">
+<h2>[0.7.1] - February 04, 2026<a class="headerlink" href="#february-04-2026" title="Link to this heading">#</a></h2>
+<section id="id35">
+<h3>Fixed<a class="headerlink" href="#id35" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update docs deployment to clone and copy instead of remote push (<code class="docutils literal notranslate"><span class="pre">4193542</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id36">
+<h2>[0.7.0] - February 04, 2026<a class="headerlink" href="#id36" title="Link to this heading">#</a></h2>
+<section id="id37">
+<h3>Fixed<a class="headerlink" href="#id37" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update dependencies in pyproject.toml to specify minimum versions for pandas and numpy (<code class="docutils literal notranslate"><span class="pre">7368363</span></code>)</p></li>
+<li><p>Streamline version detection logic in <strong>init</strong>.py (<code class="docutils literal notranslate"><span class="pre">89eed72</span></code>)</p></li>
+</ul>
+</section>
+<section id="id38">
+<h3>Added<a class="headerlink" href="#id38" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Enhance documentation and setup for mkdocs with new guides and examples (<code class="docutils literal notranslate"><span class="pre">739e19e</span></code>)</p></li>
+</ul>
+</section>
+<section id="id39">
+<h3>Changed<a class="headerlink" href="#id39" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update section headers and improve clarity in notas.md (<code class="docutils literal notranslate"><span class="pre">9c0afcc</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="february-03-2026">
+<h2>[0.6.17] - February 03, 2026<a class="headerlink" href="#february-03-2026" title="Link to this heading">#</a></h2>
+<section id="id40">
+<h3>Fixed<a class="headerlink" href="#id40" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Correct install(TARGETS) for Python MODULE libraries (<code class="docutils literal notranslate"><span class="pre">59fcd2b</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id41">
+<h2>[0.6.16] - February 03, 2026<a class="headerlink" href="#id41" title="Link to this heading">#</a></h2>
+<section id="id42">
+<h3>Fixed<a class="headerlink" href="#id42" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update installation paths in CMakeLists.txt to use SKBUILD_PLATLIB_DIR and remove wheel.packages from pyproject.toml (<code class="docutils literal notranslate"><span class="pre">8e8fbcf</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id43">
+<h2>[0.6.15] - February 03, 2026<a class="headerlink" href="#id43" title="Link to this heading">#</a></h2>
+<section id="id44">
+<h3>Fixed<a class="headerlink" href="#id44" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update compile_py_module function to use subdirectories for avoiding collisions (<code class="docutils literal notranslate"><span class="pre">9e2dc52</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id45">
+<h2>[0.6.14] - February 03, 2026<a class="headerlink" href="#id45" title="Link to this heading">#</a></h2>
+<section id="id46">
+<h3>Fixed<a class="headerlink" href="#id46" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Add global target list for compiled modules and create build_all_modules target (<code class="docutils literal notranslate"><span class="pre">407e140</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id47">
+<h2>[0.6.13] - February 03, 2026<a class="headerlink" href="#id47" title="Link to this heading">#</a></h2>
+<section id="id48">
+<h3>Fixed<a class="headerlink" href="#id48" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update CMakeLists.txt and pyproject.toml for improved build configuration and debugging (<code class="docutils literal notranslate"><span class="pre">41c9415</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id49">
+<h2>[0.6.12] - February 03, 2026<a class="headerlink" href="#id49" title="Link to this heading">#</a></h2>
+<section id="id50">
+<h3>Fixed<a class="headerlink" href="#id50" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Add debug message for module build and specify wheel install directory (<code class="docutils literal notranslate"><span class="pre">146781c</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id51">
+<h2>[0.6.11] - February 03, 2026<a class="headerlink" href="#id51" title="Link to this heading">#</a></h2>
+<section id="id52">
+<h3>Fixed<a class="headerlink" href="#id52" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update wheel package path in pyproject.toml (<code class="docutils literal notranslate"><span class="pre">c0e22ea</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id53">
+<h2>[0.6.10] - February 03, 2026<a class="headerlink" href="#id53" title="Link to this heading">#</a></h2>
+<section id="id54">
+<h3>Fixed<a class="headerlink" href="#id54" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Correct license field name in pyproject.toml (<code class="docutils literal notranslate"><span class="pre">74d2a72</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id55">
+<h2>[0.6.9] - February 03, 2026<a class="headerlink" href="#id55" title="Link to this heading">#</a></h2>
+<section id="id56">
+<h3>Fixed<a class="headerlink" href="#id56" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Correct license field name in pyproject.toml (<code class="docutils literal notranslate"><span class="pre">8d461f7</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id57">
+<h2>[0.6.8] - February 03, 2026<a class="headerlink" href="#id57" title="Link to this heading">#</a></h2>
+<section id="id58">
+<h3>Fixed<a class="headerlink" href="#id58" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update license configuration in pyproject.toml for clarity (<code class="docutils literal notranslate"><span class="pre">2a70c78</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id59">
+<h2>[0.6.7] - February 03, 2026<a class="headerlink" href="#id59" title="Link to this heading">#</a></h2>
+<section id="id60">
+<h3>Fixed<a class="headerlink" href="#id60" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update cibuildwheel version and enhance build verbosity for better debugging (<code class="docutils literal notranslate"><span class="pre">d567627</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="retry-february-03-2026">
+<h2>[0.6.6-retry] - February 03, 2026<a class="headerlink" href="#retry-february-03-2026" title="Link to this heading">#</a></h2>
+<section id="id61">
+<h3>Fixed<a class="headerlink" href="#id61" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Optimize dependency installation and update version detection logic (<code class="docutils literal notranslate"><span class="pre">058402f</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id62">
+<h2>[0.6.5-retry] - February 03, 2026<a class="headerlink" href="#id62" title="Link to this heading">#</a></h2>
+<section id="id63">
+<h3>Fixed<a class="headerlink" href="#id63" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Enhance CI/CD workflow and CMake configuration for improved build efficiency (<code class="docutils literal notranslate"><span class="pre">0c6dd6f</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id64">
+<h2>[0.6.4] - February 03, 2026<a class="headerlink" href="#id64" title="Link to this heading">#</a></h2>
+<section id="id65">
+<h3>Fixed<a class="headerlink" href="#id65" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Correct .pyi install command to restore binary installation (<code class="docutils literal notranslate"><span class="pre">1ab7dc2</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id66">
+<h2>[0.6.3] - February 03, 2026<a class="headerlink" href="#id66" title="Link to this heading">#</a></h2>
+<section id="id67">
+<h3>Fixed<a class="headerlink" href="#id67" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Simplify .pyi generation by copying source files (<code class="docutils literal notranslate"><span class="pre">65cca03</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id68">
+<h2>[0.6.2] - February 03, 2026<a class="headerlink" href="#id68" title="Link to this heading">#</a></h2>
+<section id="id69">
+<h3>Fixed<a class="headerlink" href="#id69" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Robust .pyi stub generation and installation in wheels (<code class="docutils literal notranslate"><span class="pre">5968a80</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id70">
+<h2>[0.6.1] - February 03, 2026<a class="headerlink" href="#id70" title="Link to this heading">#</a></h2>
+<section id="id71">
+<h3>Fixed<a class="headerlink" href="#id71" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Improve stub generation process and ensure optional installation of .pyi files (<code class="docutils literal notranslate"><span class="pre">46a5b8a</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id72">
+<h2>[0.6.0] - February 03, 2026<a class="headerlink" href="#id72" title="Link to this heading">#</a></h2>
+<section id="fix">
+<h3>“fix<a class="headerlink" href="#fix" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Use Python module invocation for stubgen in CMake” (<code class="docutils literal notranslate"><span class="pre">939580b</span></code>)</p></li>
+</ul>
+</section>
+<section id="id73">
+<h3>Added<a class="headerlink" href="#id73" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update func3 to compute quadratic (value + 1)^2 and adjust docstring (<code class="docutils literal notranslate"><span class="pre">3cf0bd0</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id74">
+<h2>[0.5.1] - February 03, 2026<a class="headerlink" href="#id74" title="Link to this heading">#</a></h2>
+<section id="id75">
+<h3>Fixed<a class="headerlink" href="#id75" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update Python version requirement and add mypy dependency; adjust stub generation path and wheel exclusion rules (<code class="docutils literal notranslate"><span class="pre">92456f0</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="february-02-2026">
+<h2>[0.5.0] - February 02, 2026<a class="headerlink" href="#february-02-2026" title="Link to this heading">#</a></h2>
+<section id="id76">
+<h3>Added<a class="headerlink" href="#id76" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Enhance CMake configuration for stub generation and add requirements.txt (<code class="docutils literal notranslate"><span class="pre">422386d</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id77">
+<h2>[0.4.0] - February 02, 2026<a class="headerlink" href="#id77" title="Link to this heading">#</a></h2>
+<section id="id78">
+<h3>Added<a class="headerlink" href="#id78" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update release workflow and CMake configuration to generate type stubs (<code class="docutils literal notranslate"><span class="pre">1604a65</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id79">
+<h2>[0.3.0] - February 02, 2026<a class="headerlink" href="#id79" title="Link to this heading">#</a></h2>
+<section id="id80">
+<h3>Added<a class="headerlink" href="#id80" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Add type hint stubs for main, modulo1, and modulo2 modules (<code class="docutils literal notranslate"><span class="pre">2125282</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id81">
+<h2>[0.2.12] - February 02, 2026<a class="headerlink" href="#id81" title="Link to this heading">#</a></h2>
+<section id="id82">
+<h3>Fixed<a class="headerlink" href="#id82" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Remove unnecessary Cython flag for docstrings in CMake configuration (<code class="docutils literal notranslate"><span class="pre">e9f0221</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id83">
+<h2>[0.2.11] - February 02, 2026<a class="headerlink" href="#id83" title="Link to this heading">#</a></h2>
+<section id="id84">
+<h3>Fixed<a class="headerlink" href="#id84" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Add missing Salary data to sample DataFrame in modulo2.py (<code class="docutils literal notranslate"><span class="pre">9945e6e</span></code>)</p></li>
+</ul>
+</section>
+<section id="id85">
+<h3>Chores<a class="headerlink" href="#id85" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Add docstring verification step in release workflow and update Cython flags for better docstring handling (<code class="docutils literal notranslate"><span class="pre">be9437f</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id86">
+<h2>[0.2.10] - February 02, 2026<a class="headerlink" href="#id86" title="Link to this heading">#</a></h2>
+<section id="id87">
+<h3>Fixed<a class="headerlink" href="#id87" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Correct func2 documentation and implementation to reflect squaring behavior (<code class="docutils literal notranslate"><span class="pre">83cb8d0</span></code>)</p></li>
+</ul>
+</section>
+<section id="id88">
+<h3>Chores<a class="headerlink" href="#id88" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Add Cython directives for docstring handling in main and module files (<code class="docutils literal notranslate"><span class="pre">487c313</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id89">
+<h2>[0.2.9] - February 02, 2026<a class="headerlink" href="#id89" title="Link to this heading">#</a></h2>
+<section id="id90">
+<h3>Fixed<a class="headerlink" href="#id90" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update Cython installation and compilation commands for improved docstring handling (<code class="docutils literal notranslate"><span class="pre">da55558</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id91">
+<h2>[0.2.8] - February 02, 2026<a class="headerlink" href="#id91" title="Link to this heading">#</a></h2>
+<section id="id92">
+<h3>Changed<a class="headerlink" href="#id92" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Enhance docstrings across modules for clarity and consistency (<code class="docutils literal notranslate"><span class="pre">b107f22</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id93">
+<h2>[0.2.7] - February 02, 2026<a class="headerlink" href="#id93" title="Link to this heading">#</a></h2>
+<section id="id94">
+<h3>Changed<a class="headerlink" href="#id94" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update compile_py_module function to correctly generate PYX and CPP file names (<code class="docutils literal notranslate"><span class="pre">8b20fb7</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id95">
+<h2>[0.2.6] - February 02, 2026<a class="headerlink" href="#id95" title="Link to this heading">#</a></h2>
+<section id="id96">
+<h3>Changed<a class="headerlink" href="#id96" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update compile_py_module function to include TARGET_NAME parameter (<code class="docutils literal notranslate"><span class="pre">77c6a9d</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id97">
+<h2>[0.2.5] - February 02, 2026<a class="headerlink" href="#id97" title="Link to this heading">#</a></h2>
+<section id="id98">
+<h3>Changed<a class="headerlink" href="#id98" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update cibuildwheel version and specify Python builds in release workflow (<code class="docutils literal notranslate"><span class="pre">6381284</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id99">
+<h2>[0.2.4] - February 02, 2026<a class="headerlink" href="#id99" title="Link to this heading">#</a></h2>
+<section id="id100">
+<h3>Changed<a class="headerlink" href="#id100" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update workflow to run on Windows instead of macOS (<code class="docutils literal notranslate"><span class="pre">384ea4f</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="february-01-2026">
+<h2>[0.2.3] - February 01, 2026<a class="headerlink" href="#february-01-2026" title="Link to this heading">#</a></h2>
+<section id="id101">
+<h3>Changed<a class="headerlink" href="#id101" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update wheel.exclude to exclude all .py files except <strong>init</strong>.py (<code class="docutils literal notranslate"><span class="pre">0bc3734</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id102">
+<h2>[0.2.2] - February 01, 2026<a class="headerlink" href="#id102" title="Link to this heading">#</a></h2>
+<section id="id103">
+<h3>Changed<a class="headerlink" href="#id103" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Remove install.components from build configuration (<code class="docutils literal notranslate"><span class="pre">5eb879c</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id104">
+<h2>[0.2.1] - February 01, 2026<a class="headerlink" href="#id104" title="Link to this heading">#</a></h2>
+<section id="id105">
+<h3>Changed<a class="headerlink" href="#id105" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Remove macOS universal2 architecture setting from build wheels step (<code class="docutils literal notranslate"><span class="pre">1ee93ed</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id106">
+<h2>[0.2.0] - February 01, 2026<a class="headerlink" href="#id106" title="Link to this heading">#</a></h2>
+<section id="id107">
+<h3>Added<a class="headerlink" href="#id107" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Add support for universal2 wheels on macOS (<code class="docutils literal notranslate"><span class="pre">6be80bb</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id108">
+<h2>[0.1.8] - February 01, 2026<a class="headerlink" href="#id108" title="Link to this heading">#</a></h2>
+<section id="id109">
+<h3>Changed<a class="headerlink" href="#id109" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Simplify macOS build configuration in release workflow (<code class="docutils literal notranslate"><span class="pre">a5bb9fb</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id110">
+<h2>[0.1.7] - February 01, 2026<a class="headerlink" href="#id110" title="Link to this heading">#</a></h2>
+<section id="id111">
+<h3>Changed<a class="headerlink" href="#id111" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Clean up function names and imports in submodules (<code class="docutils literal notranslate"><span class="pre">1b8e107</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id112">
+<h2>[0.1.6] - February 01, 2026<a class="headerlink" href="#id112" title="Link to this heading">#</a></h2>
+<section id="id113">
+<h3>Fixed<a class="headerlink" href="#id113" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Add support for building wheels on both macOS architectures (<code class="docutils literal notranslate"><span class="pre">0b2c5ef</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id114">
+<h2>[0.1.5] - February 01, 2026<a class="headerlink" href="#id114" title="Link to this heading">#</a></h2>
+<section id="id115">
+<h3>Fixed<a class="headerlink" href="#id115" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Remove unnecessary wheel.py-api configuration from pyproject.toml (<code class="docutils literal notranslate"><span class="pre">3fb4a72</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id116">
+<h2>[0.1.4] - February 01, 2026<a class="headerlink" href="#id116" title="Link to this heading">#</a></h2>
+<section id="id117">
+<h3>Fixed<a class="headerlink" href="#id117" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Streamline Cython compilation process by removing redundant commands (<code class="docutils literal notranslate"><span class="pre">52ad4eb</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id118">
+<h2>[0.1.3] - February 01, 2026<a class="headerlink" href="#id118" title="Link to this heading">#</a></h2>
+<section id="id119">
+<h3>Fixed<a class="headerlink" href="#id119" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update project languages in CMakeLists.txt and enhance Cython compilation process (<code class="docutils literal notranslate"><span class="pre">f38a217</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id120">
+<h2>[0.1.2] - February 01, 2026<a class="headerlink" href="#id120" title="Link to this heading">#</a></h2>
+<section id="id121">
+<h3>Fixed<a class="headerlink" href="#id121" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update wheel.exclude to prevent exclusion of <strong>init</strong>.py files (<code class="docutils literal notranslate"><span class="pre">f405877</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id122">
+<h2>[0.1.1] - February 01, 2026<a class="headerlink" href="#id122" title="Link to this heading">#</a></h2>
+<section id="id123">
+<h3>Fixed<a class="headerlink" href="#id123" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update CMake version specification and remove wheel.exclude to prevent exclusion of <strong>init</strong>.py files (<code class="docutils literal notranslate"><span class="pre">f40b4ff</span></code>)</p></li>
+</ul>
+</section>
+<section id="id124">
+<h3>Chores<a class="headerlink" href="#id124" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update CHANGELOG.md for version 0.1.0 and enable changelog update on version bump (<code class="docutils literal notranslate"><span class="pre">0f0a916</span></code>)</p></li>
+</ul>
+</section>
+</section>
+<section id="id125">
+<h2>[0.1.0] - February 01, 2026<a class="headerlink" href="#id125" title="Link to this heading">#</a></h2>
+<section id="id126">
+<h3>Fixed<a class="headerlink" href="#id126" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update setuptools configuration to include package data and exclude .py files from wheel (<code class="docutils literal notranslate"><span class="pre">2ce3831</span></code>)</p></li>
+<li><p>Revert version number to 0.0.2 in pyproject.toml (<code class="docutils literal notranslate"><span class="pre">a4b78a9</span></code>)</p></li>
+<li><p>Revert version number to 0.0.2 in pyproject.toml (<code class="docutils literal notranslate"><span class="pre">02bae0c</span></code>)</p></li>
+<li><p>Revert version number to 0.0.2 in pyproject.toml (<code class="docutils literal notranslate"><span class="pre">30092d6</span></code>)</p></li>
+</ul>
+</section>
+<section id="id127">
+<h3>Chores<a class="headerlink" href="#id127" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Clean up CHANGELOG.md by removing outdated version entries (<code class="docutils literal notranslate"><span class="pre">200e949</span></code>)</p></li>
+<li><p>Move Commitizen version bump to build_wheels job (<code class="docutils literal notranslate"><span class="pre">10a961f</span></code>)</p></li>
+<li><p>Chore: prueba del workflow con commitizen (<code class="docutils literal notranslate"><span class="pre">81c051a</span></code>)</p></li>
+<li><dl class="myst field-list simple">
+<dt class="field-odd">rocket<span class="colon">:</span></dt>
+<dd class="field-odd"><p>release v0.0.2 (<code class="docutils literal notranslate"><span class="pre">d7b29da</span></code>)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="myst field-list simple">
+<dt class="field-odd">rocket<span class="colon">:</span></dt>
+<dd class="field-odd"><p>release v0.0.1 (<code class="docutils literal notranslate"><span class="pre">5e78403</span></code>)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="myst field-list simple">
+<dt class="field-odd">rocket<span class="colon">:</span></dt>
+<dd class="field-odd"><p>release 0.0.4 (<code class="docutils literal notranslate"><span class="pre">76d9a73</span></code>)</p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="id128">
+<h3>Documentation<a class="headerlink" href="#id128" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Enhance documentation and add functions in latuca package; include docstrings for modules and functions (<code class="docutils literal notranslate"><span class="pre">39276ad</span></code>)</p></li>
+<li><p>Update release workflow to use new token and improve file copying logic; enhance repository notes and add documentation file (<code class="docutils literal notranslate"><span class="pre">82051e5</span></code>)</p></li>
+</ul>
+</section>
+<section id="id129">
+<h3>Added<a class="headerlink" href="#id129" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Add annotated_tag configuration for commitizen (<code class="docutils literal notranslate"><span class="pre">7ece40d</span></code>)</p></li>
+<li><p>Add release script for version bump and tag push (<code class="docutils literal notranslate"><span class="pre">d9c49ed</span></code>)</p></li>
+<li><p>Enhance release workflow with full git history fetch and tag management (<code class="docutils literal notranslate"><span class="pre">5bef19d</span></code>)</p></li>
+<li><p>Add version provider for Commitizen configuration (<code class="docutils literal notranslate"><span class="pre">0b0df00</span></code>)</p></li>
+<li><p>Add Python setup step in release workflow and update notes with TODOs (<code class="docutils literal notranslate"><span class="pre">6591468</span></code>)</p></li>
+<li><p>Prueba de commitizen con push automático (<code class="docutils literal notranslate"><span class="pre">16acb33</span></code>)</p></li>
+<li><p>Feat: prueba del workflow con cz bump (<code class="docutils literal notranslate"><span class="pre">227fd82</span></code>)</p></li>
+<li><dl class="myst field-list simple">
+<dt class="field-odd">sparkles<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Modifica el toml, yml, añade control de versiones (<code class="docutils literal notranslate"><span class="pre">a0b872f</span></code>)</p>
+</dd>
+</dl>
+</li>
+<li><p>Add permissions section to release-drafter workflow for content write access (<code class="docutils literal notranslate"><span class="pre">45ca3e2</span></code>)</p></li>
+<li><p>Add func_3 to sub1.modulo1 and update exports in <strong>init</strong>.py (<code class="docutils literal notranslate"><span class="pre">7b5c4a2</span></code>)</p></li>
+<li><p>Add Release Drafter configuration and enhance release workflow with pip caching (<code class="docutils literal notranslate"><span class="pre">a3c57db</span></code>)</p></li>
+<li><p>Add initial implementation of test_pypi_pru package with modules and functions (<code class="docutils literal notranslate"><span class="pre">49be867</span></code>)</p></li>
+<li><p>Add initial implementation of latuca package with modules and functions (<code class="docutils literal notranslate"><span class="pre">bcb2590</span></code>)</p></li>
+<li><p>Add VSCode settings for pinned GitHub Actions workflows (<code class="docutils literal notranslate"><span class="pre">2076969</span></code>)</p></li>
+<li><p>Add initial project structure with CMake configuration, GitHub Actions workflow, and example modules (<code class="docutils literal notranslate"><span class="pre">0a96371</span></code>)</p></li>
+</ul>
+</section>
+<section id="id130">
+<h3>Changed<a class="headerlink" href="#id130" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Update func2 to double the input value before rounding (<code class="docutils literal notranslate"><span class="pre">29ac808</span></code>)</p></li>
+<li><p>Update workflow to publish to Test PyPI with specified repository URL (<code class="docutils literal notranslate"><span class="pre">f8a054f</span></code>)</p></li>
+<li><p>Update workflow name for clarity: ‘Release and Sync Public’ to ‘Release in test-PyPI and Sync Public’ (<code class="docutils literal notranslate"><span class="pre">466c479</span></code>)</p></li>
+<li><p>Update Windows environment variables in GitHub Actions and remove unnecessary pandas dependency from pyproject.toml (<code class="docutils literal notranslate"><span class="pre">f8909da</span></code>)</p></li>
+<li><p>Enhance GitHub Actions workflow: add Windows-specific configurations and cleanup steps (<code class="docutils literal notranslate"><span class="pre">3df4857</span></code>)</p></li>
+<li><p>Enhance compile_py_module function: add custom command to generate .pyx file from .py source (<code class="docutils literal notranslate"><span class="pre">fcc9ba7</span></code>)</p></li>
+<li><p>Enhance CMake configuration: ensure target is treated as C++ for linking in compile_py_module function (<code class="docutils literal notranslate"><span class="pre">3c3d976</span></code>)</p></li>
+<li><p>Update build step in release workflow to install specific dependencies for wheel building (<code class="docutils literal notranslate"><span class="pre">4710a8e</span></code>)</p></li>
+<li><p>Update repository URL in notes and add verification steps (<code class="docutils literal notranslate"><span class="pre">5369149</span></code>)</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="api/sub2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Submodule 2: DataFrame Utilities</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#february-09-2026">[0.17.4] - February 09, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chores">Chores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#documentation">Documentation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#removed">Removed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#changed">Changed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#february-07-2026">[0.17.2] - February 07, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Changed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">[0.17.1] - February 07, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Changed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">[0.17.0] - February 07, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#added">Added</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">[0.16.0] - February 07, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fixed">Fixed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Added</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">[0.15.0] - February 07, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Fixed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Documentation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Added</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Changed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#february-06-2026">[0.14.0] - February 06, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Fixed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Added</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">[0.13.0] - February 06, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Added</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">[0.12.0] - February 06, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Added</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">[0.11.0] - February 06, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Added</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">[0.10.0] - February 06, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Added</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#february-05-2026">[0.9.0] - February 05, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Added</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">[0.8.4] - February 05, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">[0.8.3] - February 05, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">[0.8.2] - February 05, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">[0.8.1] - February 05, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">[0.8.0] - February 05, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">Added</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">[0.7.2] - February 05, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#february-04-2026">[0.7.1] - February 04, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">[0.7.0] - February 04, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">Fixed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">Added</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">Changed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#february-03-2026">[0.6.17] - February 03, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id40">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id41">[0.6.16] - February 03, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id42">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id43">[0.6.15] - February 03, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id44">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id45">[0.6.14] - February 03, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id46">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id47">[0.6.13] - February 03, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id48">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id49">[0.6.12] - February 03, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id50">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id51">[0.6.11] - February 03, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id52">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id53">[0.6.10] - February 03, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id54">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id55">[0.6.9] - February 03, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id56">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id57">[0.6.8] - February 03, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id58">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id59">[0.6.7] - February 03, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id60">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#retry-february-03-2026">[0.6.6-retry] - February 03, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id61">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id62">[0.6.5-retry] - February 03, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id63">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id64">[0.6.4] - February 03, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id65">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id66">[0.6.3] - February 03, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id67">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id68">[0.6.2] - February 03, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id69">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id70">[0.6.1] - February 03, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id71">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id72">[0.6.0] - February 03, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fix">“fix</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id73">Added</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id74">[0.5.1] - February 03, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id75">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#february-02-2026">[0.5.0] - February 02, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id76">Added</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id77">[0.4.0] - February 02, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id78">Added</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id79">[0.3.0] - February 02, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id80">Added</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id81">[0.2.12] - February 02, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id82">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id83">[0.2.11] - February 02, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id84">Fixed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id85">Chores</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id86">[0.2.10] - February 02, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id87">Fixed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id88">Chores</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id89">[0.2.9] - February 02, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id90">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id91">[0.2.8] - February 02, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id92">Changed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id93">[0.2.7] - February 02, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id94">Changed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id95">[0.2.6] - February 02, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id96">Changed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id97">[0.2.5] - February 02, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id98">Changed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id99">[0.2.4] - February 02, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id100">Changed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#february-01-2026">[0.2.3] - February 01, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id101">Changed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id102">[0.2.2] - February 01, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id103">Changed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id104">[0.2.1] - February 01, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id105">Changed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id106">[0.2.0] - February 01, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id107">Added</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id108">[0.1.8] - February 01, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id109">Changed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id110">[0.1.7] - February 01, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id111">Changed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id112">[0.1.6] - February 01, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id113">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id114">[0.1.5] - February 01, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id115">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id116">[0.1.4] - February 01, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id117">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id118">[0.1.3] - February 01, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id119">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id120">[0.1.2] - February 01, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id121">Fixed</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id122">[0.1.1] - February 01, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id123">Fixed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id124">Chores</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id125">[0.1.0] - February 01, 2026</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id126">Fixed</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id127">Chores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id128">Documentation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id129">Added</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id130">Changed</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/changelog.md.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2026, Alberto Aragoneses.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
