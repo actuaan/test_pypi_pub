@@ -41,15 +41,16 @@ pip install test-pypi-pru
 
 Full documentation is available at:
 
-- **Production**: https://actuaan.github.io/test_pypi_pub/latest/
-- **All versions**: https://actuaan.github.io/test_pypi_pub/
+- **Latest version**: https://actuaan.github.io/test_pypi_pub/latest/
+- **Specific versions**: https://actuaan.github.io/test_pypi_pub/v{VERSION}/ (e.g., `/v0.17.4/`)
+- **Version selector**: Available in all documentation pages
 
-Documentation is built with **Sphinx + Furo** and includes:
+Documentation is built with **Sphinx + PyData theme** and includes:
 - Getting Started guide
 - Complete API reference with NumPy-style docstrings
 - Advanced examples
 - Actuarial mathematics functions with MathJax notation
-- Multi-version support
+- Multi-version support (each release creates a new versioned documentation)
 
 ### Build Documentation Locally
 
