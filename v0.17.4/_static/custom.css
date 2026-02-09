@@ -1,0 +1,49 @@
+/* ============================================================================
+   Custom CSS for test_pypi_pru documentation
+   PyData Sphinx Theme with NumPy-inspired typography
+   ============================================================================ */
+
+/* Import NumPy-style fonts: Open Sans for body, Lato for headings */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+/* Apply Open Sans to body text */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+}
+
+/* Apply Lato to headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+/* ============================================
+   CODE BLOCKS - NumPy Style
+   ============================================ */
+
+div.highlight pre,
+pre.literal-block {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 1em;
+    border-radius: 4px;
+}
+
+code.literal {
+    font-size: 0.9em;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* ============================================
+   MATH DISPLAY - Spacing for formulas
+   ============================================ */
+
+.math {
+    margin: 1em 0;
+}
+
+div.math {
+    margin: 1.2em 0;
+    overflow-x: auto;
+}
