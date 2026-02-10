@@ -27,7 +27,7 @@ pip install test-pypi-pru
 
 ### Requirements
 
-- Python >= 3.14
+- Python >= 3.10
 - NumPy >= 2.4.2
 - Pandas >= 3.0.0
 

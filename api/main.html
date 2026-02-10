@@ -42,12 +42,21 @@
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=f04cce2a"></script>
-    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
-    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "displayMath": [["$$", "$$"], ["\\[", "\\]"]], "packages": {"[]": ["base", "ams", "newcommand", "configmacros"], "[+]": ["physics"]}, "macros": {"ax": ["\\ddot{a}_{\\overline{#1}|}", 1], "axi": ["\\ddot{a}_{#1}^{(#2)}", 2], "sx": ["\\ddot{s}_{\\overline{#1}|}", 1], "npx": ["{}_{#1}p_{#2}", 2], "nqx": ["{}_{#1}q_{#2}", 2], "ex": ["\\mathring{e}_{#1}", 1], "Ax": ["\\bar{A}_{#1}", 1], "vx": ["v^{#1}", 1]}}, "options": {"skipHtmlTags": ["script", "noscript", "style", "textarea", "pre", "code"]}, "loader": {"load": ["[tex]/physics", "[tex]/ams"]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'api/main';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://actuaan.github.io/test_pypi_pub/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.17.4';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Submodule 1: Numerical Functions" href="sub1.html" />
@@ -181,6 +190,26 @@
       
       
         <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
+        <div class="navbar-item">
 
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
@@ -299,6 +328,26 @@
       <div class="sidebar-header-items__end">
         
           <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+        
+          <div class="navbar-item">
 
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
@@ -396,6 +445,126 @@
   <section id="main-module">
 <h1>Main Module<a class="headerlink" href="#main-module" title="Link to this heading">#</a></h1>
 <p>The main module contains core functionality for the package, including actuarial mathematics functions.</p>
+<p id="module-test_pypi_pru.main">Main utilities for the package.</p>
+<p>The functions here are small examples used in the project. Docstrings follow
+the NumPy style and include LaTeX where appropriate.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="test_pypi_pru.main.my_function">
+<span class="sig-prename descclassname"><span class="pre">test_pypi_pru.main.</span></span><span class="sig-name descname"><span class="pre">my_function</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/test_pypi_pru/main.html#my_function"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#test_pypi_pru.main.my_function" title="Link to this definition">#</a></dt>
+<dd><p>Return the product of two integers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a>) – First integer.</p></li>
+<li><p><strong>y</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a>) – Second integer.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The product <span class="math notranslate nohighlight">\(x    imes y\)</span> computed using NumPy.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)">int</a></p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">my_function</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="go">6</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="test_pypi_pru.main.annuity_present_value">
+<span class="sig-prename descclassname"><span class="pre">test_pypi_pru.main.</span></span><span class="sig-name descname"><span class="pre">annuity_present_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">px</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/test_pypi_pru/main.html#annuity_present_value"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#test_pypi_pru.main.annuity_present_value" title="Link to this definition">#</a></dt>
+<dd><p>Calculate the present value of an annuity with actuarial notation.</p>
+<p>This function demonstrates complex actuarial mathematics notation in
+docstrings using MathJax with custom macros.</p>
+<p>The present value of a life annuity-due of 1 per period for $n$ periods
+is given by:</p>
+<div class="math notranslate nohighlight">
+\[\ax{n} = \sum_{k=0}^{n-1} \vx{k} \cdot \npx{k}{x}\]</div>
+<p>where:
+- $ax{n}$ is the annuity-due present value (using custom macro)
+- $vx{k} = (1+i)^{-k}$ is the discount factor
+- $npx{k}{x}$ is the probability that $(x)$ survives $k$ years</p>
+<p>For an $m$-thly annuity, the present value is:</p>
+<div class="math notranslate nohighlight">
+\[\axi{x}{m} = \frac{1}{m} \sum_{j=0}^{mn-1} v^{j/m} \cdot {}_{j/m}p_x\]</div>
+<p>The relationship between continuous and discrete annuities:</p>
+<div class="math notranslate nohighlight">
+\[\bar{a}_{x:\overline{n}|} \approx \ax{n} - \frac{m-1}{2m}\]</div>
+<p>With mortality, the complete life expectancy is:</p>
+<div class="math notranslate nohighlight">
+\[\ex{x} = \int_0^{\infty} {}_tp_x \, dt = \sum_{k=0}^{\infty} \npx{k}{x}\]</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a>) – Number of payment periods.</p></li>
+<li><p><strong>i</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><em>float</em></a>) – Interest rate per period (e.g., 0.05 for 5%).</p></li>
+<li><p><strong>px</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)"><em>float</em></a><em>, </em><em>optional</em>) – Survival probability per period (default: 1.0 for certain annuity).
+For life annuities, use ${}_1p_x$ for age $x$.</p></li>
+<li><p><strong>m</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)"><em>int</em></a><em>, </em><em>optional</em>) – Number of payments per period (default: 1 for annual).
+Use $m&gt;1$ for $m$-thly annuities.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Present value $ax{n}$ of the annuity-due.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.14)">float</a></p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>The formula assumes:</p>
+<ol class="arabic simple">
+<li><p>Payments at the <strong>beginning</strong> of each period (annuity-due)</p></li>
+<li><p>Constant survival probability $npx{k}{x} = (p_x)^k$</p></li>
+<li><p>Effective interest rate $i$ per period</p></li>
+</ol>
+<p>For accumulated value, use the relationship:</p>
+<div class="math notranslate nohighlight">
+\[\sx{n} = \ax{n} \cdot (1+i)^n\]</div>
+<p>where $sx{n}$ is the accumulated value.</p>
+<p class="rubric">Examples</p>
+<p>Certain annuity (no mortality):</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">annuity_present_value</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">i</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
+<span class="go">8.1078...</span>
+</pre></div>
+</div>
+<p>Life annuity with 98% annual survival:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">annuity_present_value</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">i</span><span class="o">=</span><span class="mf">0.04</span><span class="p">,</span> <span class="n">px</span><span class="o">=</span><span class="mf">0.98</span><span class="p">)</span>
+<span class="go">12.8453...</span>
+</pre></div>
+</div>
+<p>Quarterly annuity (m=4):</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">annuity_present_value</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">i</span><span class="o">=</span><span class="mf">0.06</span><span class="p">,</span> <span class="n">m</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="go">4.4518...</span>
+</pre></div>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><code class="xref py py-obj docutils literal notranslate"><span class="pre">For</span></code>, <code class="xref py py-obj docutils literal notranslate"><span class="pre">the</span></code></p>
+<dl class="simple">
+<dt><code class="xref py py-obj docutils literal notranslate"></code></dt><dd><p>Ax{x} + d cdot ax{x} = 1</p>
+</dd>
+</dl>
+<p><code class="xref py py-obj docutils literal notranslate"><span class="pre">where</span></code></p>
+</div>
+<p class="rubric">References</p>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id1" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p>Bowers, N. L., et al. (1997). <em>Actuarial Mathematics</em> (2nd ed.).
+Society of Actuaries.</p>
+</aside>
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
+<p>Dickson, D. C., et al. (2009). <em>Actuarial Mathematics for Life
+Contingent Risks</em>. Cambridge University Press.</p>
+</aside>
+</aside>
+</dd></dl>
+
 </section>
 
 
@@ -436,6 +605,19 @@
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test_pypi_pru.main.my_function"><code class="docutils literal notranslate"><span class="pre">my_function()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test_pypi_pru.main.annuity_present_value"><code class="docutils literal notranslate"><span class="pre">annuity_present_value()</span></code></a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
   <div role="note" aria-label="source link">
@@ -480,7 +662,7 @@
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.0.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     <br/>
   </p>
 </div>
