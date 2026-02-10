@@ -87,7 +87,11 @@ html_theme_options = {
     "show_toc_level": 2,
     # Version switcher configuration (like NumPy docs)
     "switcher": {
-        "json_url": "https://actuaan.github.io/test_pypi_pub/versions.json",
+        # En local usa path relativo, en CI usa URL absoluta
+        "json_url": os.getenv(
+            "SPHINX_VERSIONS_JSON_URL",
+            "versions.json"  # Path relativo para desarrollo local
+        ),
         "version_match": os.getenv("SPHINX_VERSION_MATCH", version),
     },
 }
