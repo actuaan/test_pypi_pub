@@ -1,6 +1,4 @@
 [
-  {"name": "ersions.json", "version": "ersions.json", "url": "https://actuaan.github.io/test_pypi_pub/versions.json/"}
-,
   {"name": "0.17.4 (stable)", "version": "0.17.4", "url": "https://actuaan.github.io/test_pypi_pub/v0.17.4/"}
 ,
   {"name": "latest", "version": "latest", "url": "https://actuaan.github.io/test_pypi_pub/latest/"}
