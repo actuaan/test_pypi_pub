@@ -1,7 +1,7 @@
 # Configuration file for Sphinx documentation builder.
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-# import os
+import os
 import sys
 from pathlib import Path
 
@@ -77,6 +77,7 @@ html_theme_options = {
     "collapse_navigation": True,
     "header_links_before_dropdown": 6,
     "navbar_end": [
+        "version-switcher",
         "search-button.html",
         "theme-switcher.html",
         "navbar-icon-links.html",
@@ -84,6 +85,11 @@ html_theme_options = {
     "navbar_persistent": [],
     "show_nav_level": 2,
     "show_toc_level": 2,
+    # Version switcher configuration (like NumPy docs)
+    "switcher": {
+        "json_url": "https://actuaan.github.io/test_pypi_pub/versions.json",
+        "version_match": os.getenv("SPHINX_VERSION_MATCH", version),
+    },
 }
 
 html_title = f"{project} {version}"
