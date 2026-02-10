@@ -5,7 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.17.3] - February 07, 2026
+## [0.17.4] - February 09, 2026
+
+
+### Chores
+
+- Bump version to 0.17.4 (`f3244aa`)
+
+### Documentation
+
+- Add Sphinx documentation setup and examples for test-pypi-pru
+
+- Created Sphinx configuration file (conf.py) for documentation generation.
+- Added detailed examples in examples.md showcasing package functionalities.
+- Introduced getting started guide in getting-started.md for user onboarding.
+- Developed index.md as the main entry point for documentation.
+- Backed up previous MkDocs configuration in mkdocs.yml.backup.
+- Updated pyproject.toml to include Sphinx and related dependencies.
+- Enhanced serve-docs.sh to build and serve Sphinx documentation locally.
+- Implemented annuity_present_value function in main.py with detailed docstring and MathJax support. (`ee61630`)
+
+### Removed
+
+- Remove TODO document for Test → Promote → Production pattern implementation (`1ad021b`)## [0.17.3] - February 07, 2026
 
 
 ### Changed
